@@ -44,10 +44,10 @@ By default, the application will start on port 8080. You can access it at http:/
 ## Usage
 1. To retrieve a list of GitHub repositories for a user, make an HTTP GET request to the following endpoint:
     ```shell
-      GET http://localhost:8080/api/github/repositories/{username}
-2. Example Request 
+      GET http://localhost:8080/api/repos/{username}
+2. Example Request
    ```shell
-       curl -H "Accept: application/json" http://localhost:8080/api/github/repositories/octocat
+       curl -H "Accept: application/json" http://localhost:8080/api/repos/{userame}
 3. Example Response
    ```shell
    [
@@ -73,7 +73,7 @@ By default, the application will start on port 8080. You can access it at http:/
    ]
 
 ## API Endpoints
-1. GET /api/github/repositories/{username}: List GitHub repositories for a user.
+1. GET /api/repos/{username}: List GitHub repositories for a user.
 
 ## Configuration
 1. You can configure the application by modifying the src/main/resources/application.properties file.

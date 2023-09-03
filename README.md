@@ -7,6 +7,7 @@ This is a simple Spring Boot application that allows you to list a GitHub user's
 - [Getting Started](#getting-started)
     - [Running the Application](#running-the-application)
 - [Usage](#usage)
+- [Response](#response)
 - [API Endpoints](#api-endpoints)
 - [Configuration](#configuration)
 - [Contributing](#contributing)
@@ -71,7 +72,19 @@ By default, the application will start on port 8080. You can access it at http:/
      },
    // More repositories...
    ]
-
+## Response
+1. As an api consumer, given not existing github user, You will receive 404 response like:
+```shell
+{
+    “status”: ${responseCode}
+    “Message”: ${whyHasItHappened}
+}
+2. As an api consumer, given header “Accept: application/xml”, I will receive 406 response like:
+```shell
+{
+    “status”: ${responseCode}
+    “Message”: ${whyHasItHappened}
+}
 ## API Endpoints
 1. GET /api/repos/{username}: List GitHub repositories for a user.
 

@@ -27,7 +27,7 @@ Before you begin, ensure you have met the following requirements:
 1. Clone this repository to your local machine:
 
     ```shell
-   git clone https://github.com/Your-Username/github-repo-list-api.git
+   git clone https://github.com/karolkapron/github-api-repos.git
 2. Open pulled drirectory from git
     ```shell
     cd github-repo-list-api
